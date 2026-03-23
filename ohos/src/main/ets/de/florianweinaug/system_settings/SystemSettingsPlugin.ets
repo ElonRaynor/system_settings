@@ -1,3 +1,18 @@
+/*
+ * Copyright (C) 2026 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 import {
   FlutterPlugin,
   FlutterPluginBinding,
@@ -86,25 +101,25 @@ export default class SystemSettingsPlugin implements FlutterPlugin, MethodCallHa
         this.openSettingUris(["application_and_service_settings"], result);
         return;
       case "wireless":
-        this.openSettingUris(["more_connections_settings", "mobile_network_entry"], result);
+        this.openSettingUris(["mobile_network_entry"], result);
         return;
       case "device-info":
-        this.openSettingUris(["about_device", "system_and_updates"], result);
+        this.openSettingUris(["about_device"], result);
         return;
       case "data-usage":
-        this.openSettingUris(["mobile_network_entry"], result);
+        this.openSettingUris(["mobile_data_settings_entry"], result);
         return;
       case "data-roaming":
-        this.openSettingUris(["mobile_network_entry"], result);
+        this.openSettingUris(["mobile_data_settings_entry"], result);
         return;
       case "locale":
-        this.openSettingUris(["system_and_updates"], result);
+        this.openSettingUris(["set_language_region"], result);
         return;
       case "default-apps":
         this.openSettingUris(["application_and_service_settings"], result);
         return;
       case "airplane-mode":
-        this.openSettingUris(["more_connections_settings", "mobile_network_entry"], result);
+        this.openSettingUris(["mobile_network_entry"], result);
         return;
       case "privacy":
         this.openSettingUris(["privacy_settings"], result);
@@ -116,7 +131,7 @@ export default class SystemSettingsPlugin implements FlutterPlugin, MethodCallHa
         this.openSettingUris(["storage_settings"], result);
         return;
       case "notification-policy":
-        this.openSettingUris(["systemui_notification_settings"], result);
+        this.openSettingUris(["intelligent_scene_entry"], result);
         return;
       case "power-options":
         this.openSettingUri("battery", result);

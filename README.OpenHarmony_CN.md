@@ -73,7 +73,7 @@ Future<void> openBasicSettings() async {
 | `SystemSettings.dataUsage()` | 打开数据流量设置页面 | function | 无 | `Future<void>` | yes |
 | `SystemSettings.dataRoaming()` | 打开数据漫游相关设置入口 | function | 无 | `Future<void>` | yes |
 | `SystemSettings.locale()` | 打开语言和地区设置页面 | function | 无 | `Future<void>` | yes |
-| `SystemSettings.defaultApps()` | 打开默认应用相关设置入口 | function | 无 | `Future<void>` | yes |
+| `SystemSettings.defaultApps()` | 打开默认应用相关设置入口 | function | 无 | `Future<void>` | no |
 | `SystemSettings.airplaneMode()` | 打开飞行模式相关设置入口 | function | 无 | `Future<void>` | yes |
 | `SystemSettings.privacy()` | 打开隐私设置页面 | function | 无 | `Future<void>` | yes |
 | `SystemSettings.accessibility()` | 打开无障碍设置页面 | function | 无 | `Future<void>` | yes |
@@ -84,6 +84,7 @@ Future<void> openBasicSettings() async {
 
 1. `SystemSettings.dataUsage()` 与 `SystemSettings.dataRoaming()` 当前都跳转到同一系统页面（移动数据设置页），无法像 Android 一样精确区分到独立入口。
 2. `SystemSettings.notificationPolicy()` 在 Android 对应“勿扰权限/通知策略”页面，在 OpenHarmony 当前映射为“情景模式（智能场景）”入口，平台语义存在差异。
+3. `SystemSettings.defaultApps()` 默认应用页面鸿蒙不支持
 
 
 ## 6. 开源协议

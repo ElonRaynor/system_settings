@@ -116,7 +116,7 @@ export default class SystemSettingsPlugin implements FlutterPlugin, MethodCallHa
         this.openSettingUris(["set_language_region"], result);
         return;
       case "default-apps":
-        this.openSettingUris(["application_and_service_settings"], result);
+        result.error("unsupported", "OpenHarmony does not support opening the default apps settings page (default-apps).", null);
         return;
       case "airplane-mode":
         this.openSettingUris(["mobile_network_entry"], result);

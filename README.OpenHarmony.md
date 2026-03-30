@@ -73,7 +73,7 @@ Future<void> openBasicSettings() async {
 | `SystemSettings.dataUsage()` | Open mobile data usage settings page | function | None | `Future<void>` | yes |
 | `SystemSettings.dataRoaming()` | Open data roaming related settings entry | function | None | `Future<void>` | yes |
 | `SystemSettings.locale()` | Open language and region settings page | function | None | `Future<void>` | yes |
-| `SystemSettings.defaultApps()` | Open default apps related settings entry | function | None | `Future<void>` | yes |
+| `SystemSettings.defaultApps()` | Open default apps related settings entry | function | None | `Future<void>` | no |
 | `SystemSettings.airplaneMode()` | Open airplane mode related settings entry | function | None | `Future<void>` | yes |
 | `SystemSettings.privacy()` | Open privacy settings page | function | None | `Future<void>` | yes |
 | `SystemSettings.accessibility()` | Open accessibility settings page | function | None | `Future<void>` | yes |
@@ -84,6 +84,7 @@ Future<void> openBasicSettings() async {
 
 1. `SystemSettings.dataUsage()` and `SystemSettings.dataRoaming()` currently navigate to the same system page (mobile data settings), and cannot be separated into distinct entries as on Android.
 2. `SystemSettings.notificationPolicy()` maps to a "Do Not Disturb / notification policy" page on Android, but currently maps to "Scene Mode (Intelligent Scene)" on OpenHarmony, so there is a platform semantic difference.
+3. `SystemSettings.defaultApps()` is not supported on OpenHarmony (no corresponding default apps settings page).
 
 ## 6. License
 

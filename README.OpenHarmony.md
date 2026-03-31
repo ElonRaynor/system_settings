@@ -41,13 +41,15 @@ Future<void> openBasicSettings() async {
 
 ## 2. Constraints
 
-1. Flutter: oh-3.27.4-dev; SDK: 5.0.0(12); IDE: DevEco Studio: 5.1.0.828; ROM: 5.1.0.130 SP8;
+1. Flutter: 3.22.0-ohos; SDK: 5.0.0 (12); IDE: DevEco Studio 5.1.0.828; ROM: 5.1.0.130 SP8
+2. Flutter: oh-3.27.4-dev; SDK: 5.0.0 (12); IDE: DevEco Studio 5.1.0.828; ROM: 5.1.0.130 SP8
+3. Flutter: 3.35.8-ohos-0.0.1; SDK: 6.0.1 (21); IDE: DevEco Studio 6.0.1.260; ROM: 6.0.0.120 SP6
 
 ## 3. Version and Framework Mapping
 
-|       | 3.7 | 3.22 | 3.27 | 3.35 |
-|-------|:---:|:----:|:----:|:----:|
-| 1.0.0 |  ❌  |  ❌   |  ✅   |  ❌   |
+| Version | 3.7 | 3.22 | 3.27 | 3.35 |
+| ---- | :--: | :--: | :--: | :--: |
+| 1.0.0 | ❌ | ✅ | ✅ | ✅ |
 
 ## 4. API
 
